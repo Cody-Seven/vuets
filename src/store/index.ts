@@ -10,7 +10,7 @@ interface State {
   articles: StoreState.articles[];
 }
 
-const state: State = {
+let state: State = {
   articles: [],
 };
 

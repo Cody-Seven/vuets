@@ -11,7 +11,7 @@ const actions: ActionTree<any, any> = {
     const res: Ajax.AjaxResponse = await axios.get('/articles')
       .then((response) => response.data).catch((e: string) => console.error(e));
     if (res && res.code === 200) {
-      commit(TYPES.SET_ARTICLES, res.result.list);
+      commit(TYPES.SET_ARTICLES, res.result.articles);
     }
   },
 };

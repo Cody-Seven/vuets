@@ -11,8 +11,10 @@ import { State } from 'vuex-class';
 @Component
 export default class LeftBar extends Vue {
   @State articles: StoreState.articles[];
+
   get articles(): StoreState.articles[] {
     const articles = this.articles;
+    console.log(articles)
     return articles;
   }
 }

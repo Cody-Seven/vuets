@@ -6,7 +6,7 @@
 <script lang="ts">
 import { Vue, Component } from 'vue-property-decorator';
 import Nav from '@/components/nav.vue';
-import { Action } from 'vuex-class';
+import { Action, Getter } from 'vuex-class';
 
 @Component({
   components: {
@@ -14,7 +14,7 @@ import { Action } from 'vuex-class';
   },
 })
 export default class app extends Vue {
-  @Action initAjax: () => void
+  @Action initAjax: () => void;
 
   mounted() {
     this.initAjax()
