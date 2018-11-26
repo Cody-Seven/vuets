@@ -4,15 +4,22 @@
     router-view
 </template>
 <script lang="ts">
-import { Vue, Component } from 'vue-property-decorator'
-import Nav from '@/components/nav.vue'
+import { Vue, Component } from 'vue-property-decorator';
+import Nav from '@/components/nav.vue';
+import { Action } from 'vuex-class';
 
 @Component({
   components: {
     Nav,
   },
 })
-export default class app extends Vue {}
+export default class app extends Vue {
+  @Action initAjax: () => void
+
+  mounted() {
+    this.initAjax()
+  }
+}
 </script>
 <style lang="scss">
 @import '@/style/common.scss'
