@@ -1,5 +1,5 @@
 <template lang="pug">
-  #home cody
+  #home
     Codyhome
 </template>
 

@@ -14,6 +14,9 @@ import Nav from '@/components/nav.vue'
 })
 export default class app extends Vue {}
 </script>
+<style lang="scss">
+@import '@/style/common.scss'
+</style>
 
 <style lang="scss">
 #app {

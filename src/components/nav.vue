@@ -14,6 +14,10 @@ export default class Nav extends Vue {
 <style scoped lang='scss'>
 #Nav {
   padding: 30px;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  margin-left: -70px;
   a {
     font-weight: bold;
     color: #2c3e50;
