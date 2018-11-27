@@ -34,6 +34,8 @@ export default class LeftBar extends Vue {
     font-size: 20px;
     line-height: 40px;
     font-weight: 700;
+    flex-shrink: 0;
+    flex-grow: 0;
     cursor: pointer;
     &:hover {
       opacity: 0.8;

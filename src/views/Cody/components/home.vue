@@ -7,9 +7,10 @@
 </template>
 
 <script lang='ts'>
-import { Vue, Component } from 'vue-property-decorator'
-import LeftBar from './leftBar.vue'
-import RightBar from './rightBar.vue'
+import { Vue, Component } from 'vue-property-decorator';
+import LeftBar from './leftBar.vue';
+import RightBar from './rightBar.vue';
+
 @Component({
   components: {
     LeftBar,
@@ -22,7 +23,7 @@ export default class Codyhome extends Vue {}
 #Codyhome {
   height: 100%;
   width: 100%;
-  padding: 100px 0;
+  margin-top: 100px;
   text-align: center;
   display: flex;
   .center-bar {

@@ -1,7 +1,7 @@
 import Mock from 'mockjs'
 import articles from './articles'
+import carousels from './carousels'
 
-// articles
 Mock.mock('/articles', 'get', () => {
   return {
     code: 200,
@@ -11,5 +11,10 @@ Mock.mock('/articles', 'get', () => {
   return {
     code: 200,
     result: articles.articles[0]
+  }
+  }).mock('/carousels', 'get', () => {
+  return {
+    code: 200,
+    result: carousels
   }
 })

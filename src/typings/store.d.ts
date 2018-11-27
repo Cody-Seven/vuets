@@ -5,4 +5,8 @@ declare namespace StoreState {
     type_id: number,
     type_name: string
   }
+  export interface carousels {
+    url: string,
+    name: string
+  }
 }

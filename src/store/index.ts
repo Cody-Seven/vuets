@@ -8,10 +8,12 @@ Vue.use(Vuex);
 
 interface State {
   articles: StoreState.articles[];
+  carousels: StoreState.carousels[];
 }
 
 let state: State = {
   articles: [],
+  carousels: [],
 };
 
 export default new Vuex.Store({
