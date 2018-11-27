@@ -1,8 +1,8 @@
 <!-- nav -->
 <template lang='pug'>
   #Nav
-    router-link(to="/") Cody |
-    router-link(to="/gunnar") Gunnar
+    router-link(to="/") 海绵宝宝 |
+    router-link(to="/gunnar") 派大星
 </template>
 
 <script lang='ts'>
