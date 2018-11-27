@@ -7,4 +7,9 @@ Mock.mock('/articles', 'get', () => {
     code: 200,
     result: articles
   }
+}).mock('/article/detail', 'get', () => {
+  return {
+    code: 200,
+    result: articles.articles[0]
+  }
 })
