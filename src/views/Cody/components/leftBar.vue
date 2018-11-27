@@ -26,7 +26,8 @@ export default class LeftBar extends Vue {
 </script>
 <style scoped lang='scss'>
 #LeftBar {
-  flex: 1;
+  width: 50%;
+  flex-shrink: 0;
   .item {
     height: 40px;
     text-align: right;

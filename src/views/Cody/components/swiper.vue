@@ -35,7 +35,7 @@ export default class Swiper extends Vue {
 <style scoped lang='scss'>
 #Swiper {
   padding: 0 80px;
-  width: 500px;
+  width: 900px;
   height: 500px;
 }
 .img-wrap {

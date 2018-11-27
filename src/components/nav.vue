@@ -17,12 +17,13 @@ export default class Nav extends Vue {
   width: 100%;
   position: fixed;
   top: 0;
-  margin-left: -30px;
+  margin-left: 0px;
   left: 0;
   z-index: 10;
   background-color: #b4d9ea;
   a {
     font-weight: bold;
+    font-size: 24px;
     color: #2c3e50;
     &.router-link-exact-active {
       color: #42b983;

@@ -29,6 +29,7 @@ export default class Codyhome extends Vue {}
   .center-bar {
     width: 2px;
     height: 100%;
+    flex-shrink: 0;
     background-color: #fff;
   }
 }

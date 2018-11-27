@@ -1,7 +1,8 @@
 <!-- 右侧 -->
 <template lang='pug'>
   #RightBar
-    Swiper
+    .swiper-wrap
+      Swiper
 </template>
 
 <script lang='ts'>
@@ -17,8 +18,11 @@ export default class RightBar extends Vue {}
 </script>
 <style scoped lang='scss'>
 #RightBar {
-  flex: 1;
+  width: 50%;
   flex-shrink: 0;
   flex-grow: 0;
+  .swiper-wrap{
+    margin: 0 20%;
+  }
 }
 </style>
