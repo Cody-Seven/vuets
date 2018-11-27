@@ -21,16 +21,16 @@ export default class Codyhome extends Vue {
 </script>
 <style scoped lang='scss'>
 #Codyhome{
-  background-color: rgb(188, 210, 222);
+  background-color: rgb(180, 217, 234);
   height: 100%;
   width: 100%;
-  padding-top: 100px;
+  padding: 100px 0;
   text-align: center;
   display: flex;
   .center-bar{
     width: 2px;
     height: 800px;
-    background-color: #ccc;
+    background-color: #fff;
   }
 }
 </style>
