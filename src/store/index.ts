@@ -11,7 +11,7 @@ interface State {
   carousels: StoreState.carousels[];
 }
 
-let state: State = {
+const state: State = {
   articles: [],
   carousels: [],
 };

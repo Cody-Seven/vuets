@@ -14,14 +14,14 @@ import axios from 'axios'
 export default class Articles extends Vue {
   private article: Object = {}
 
-  created () {
+  created() {
     this.getArticle()
   }
   getArticle(): Object {
-    // let params: object = {
-    //   id: this.$route.query.id
-    // }
-    return axios.get('/article/detail').then(res => {
+    let params: object = {
+      id: Number(this.$route.query.id)
+    }
+    return axios.get('/article/detail', { params }).then(res => {
       this.article = res.data.result
     })
   }
@@ -31,16 +31,16 @@ export default class Articles extends Vue {
 #Articles {
   font-size: 18px;
   padding: 100px 0;
-  .title{
+  .title {
     font-size: 30px;
     font-weight: 700;
-    .time{
+    .time {
       font-size: 18px;
       font-weight: 400;
       margin-left: 300px;
     }
   }
-  .content{
+  .content {
     margin: 50px;
     text-align: left;
     text-indent: 40px;
